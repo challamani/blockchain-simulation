@@ -1,0 +1,12 @@
+{
+  "difficulty": {
+    "initial": 3,
+    "runningBlock": 102,
+    "autoDifficulty": true,
+    "changeDifficultyOn": 200
+  },
+  "shaAlgorithm": "SHA256",
+  "blockDelay": "300000",
+  "currentBlockId": "0",
+  "currentBlockIndex": "0"
+}
