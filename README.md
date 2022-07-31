@@ -4,4 +4,5 @@ Note: Everything is in-memory operation, you might face heap-memory related erro
 
 
 Upcoming - 
-in-memory transactions will reside in camunda engine, so you won't encounter any jvm heap errors
+
+in-memory transactions will reside in camunda engine, so you won't encounter any jvm heap errors at runtime
