@@ -5,8 +5,10 @@
     "autoDifficulty": true,
     "changeDifficultyOn": 200
   },
-  "shaAlgorithm": "SHA256",
+  "hashGenerator": "SHA256",
   "blockDelay": "300000",
   "currentBlockId": "0",
-  "currentBlockIndex": "0"
+  "currentBlockIndex": "0",
+  "memoryPoolSize": "500",
+  "blockSize": "1024000"
 }
