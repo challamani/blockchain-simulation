@@ -1,4 +1,4 @@
-package com.practice.java.blockchain.domain;
+package com.challamani.blockchain.domain;
 
 import lombok.Data;
 

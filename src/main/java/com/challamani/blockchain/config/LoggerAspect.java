@@ -1,4 +1,4 @@
-package com.practice.java.blockchain.config;
+package com.challamani.blockchain.config;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.AfterReturning;

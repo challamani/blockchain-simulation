@@ -1,7 +1,7 @@
-package com.practice.java.blockchain.repository;
+package com.challamani.blockchain.repository;
 
-import com.practice.java.blockchain.domain.Criteria;
-import com.practice.java.blockchain.domain.Transaction;
+import com.challamani.blockchain.domain.Transaction;
+import com.challamani.blockchain.domain.Criteria;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,11 +18,11 @@ public class TransactionRepository {
     private List<Transaction> transactions;
 
     @Autowired
-    public TransactionRepository(){
+    public TransactionRepository() {
         transactions = new ArrayList<>();
     }
 
-    public void save(List<Transaction> transactions){
+    public void save(List<Transaction> transactions) {
         transactions.addAll(transactions);
     }
 
@@ -36,16 +36,15 @@ public class TransactionRepository {
                 (StringUtils.isEmpty(filterCriteria.getTransaction().getTransactionId())
                         || StringUtils.equals(filterCriteria.getTransaction().getTransactionId(), transaction.getTransactionId()))
                         &&
-                        (StringUtils.isEmpty(filterCriteria.getTransaction().getFrom())
-                                || StringUtils.equals(filterCriteria.getTransaction().getFrom(), transaction.getFrom()))
+                        (StringUtils.isEmpty(filterCriteria.getTransaction().getFromWalletId())
+                                || StringUtils.equals(filterCriteria.getTransaction().getFromWalletId(), transaction.getFromWalletId()))
                         &&
-                        (StringUtils.isEmpty(filterCriteria.getTransaction().getTo())
-                                || StringUtils.equals(filterCriteria.getTransaction().getTo(), transaction.getTo()))
+                        (StringUtils.isEmpty(filterCriteria.getTransaction().getToWalletId())
+                                || StringUtils.equals(filterCriteria.getTransaction().getToWalletId(), transaction.getToWalletId()))
                         &&
                         (StringUtils.isEmpty(filterCriteria.getTransaction().getStatus())
                                 || StringUtils.equals(filterCriteria.getTransaction().getStatus(), transaction.getStatus()))
 
         );
     }
-
 }

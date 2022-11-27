@@ -1,8 +1,8 @@
-package com.practice.java.blockchain.service;
+package com.challamani.blockchain.service;
 
-import com.practice.java.blockchain.domain.Criteria;
-import com.practice.java.blockchain.domain.Transaction;
-import com.practice.java.blockchain.repository.TransactionRepository;
+import com.challamani.blockchain.domain.Criteria;
+import com.challamani.blockchain.domain.Transaction;
+import com.challamani.blockchain.repository.TransactionRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -24,8 +24,4 @@ public class TransactionService {
     public List<Transaction> get(Criteria filterCriteria) {
         return transactionRepository.fetchTransactionsOnCriteria(filterCriteria);
     }
-
-
-
-
 }

@@ -1,4 +1,4 @@
-package com.practice.java.blockchain.domain;
+package com.challamani.blockchain.domain;
 
 import lombok.Data;
 
@@ -7,8 +7,8 @@ import lombok.Data;
 public class Transaction {
     private String transactionId;
     private String description;
-    private String from;
-    private String to;
+    private String fromWalletId;
+    private String toWalletId;
     private String date;
     private String hashValue;
     private String fee;

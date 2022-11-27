@@ -1,4 +1,4 @@
-package com.practice.java.blockchain.service;
+package com.challamani.blockchain.service;
 
 import org.springframework.stereotype.Service;
 

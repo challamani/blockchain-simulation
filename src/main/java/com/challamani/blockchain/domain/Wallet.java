@@ -1,12 +1,12 @@
-package com.practice.java.blockchain.domain;
+package com.challamani.blockchain.domain;
 
 import lombok.Data;
-
-import java.util.List;
-import java.util.Map;
+import org.springframework.data.annotation.Id;
 
 @Data
 public class Wallet {
+    @Id
+    private String id;
     private String walletId;
     private Double reservedUnits;
     private Double unites;
@@ -16,5 +16,8 @@ public class Wallet {
     private String enabledIp;
     private String macAddress;
     private String email;
-    private Map<String, List<Transaction>> blockTransactions;
+
+    public Wallet() {
+    }
+
 }

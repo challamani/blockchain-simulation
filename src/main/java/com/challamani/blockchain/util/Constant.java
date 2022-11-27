@@ -1,4 +1,4 @@
-package com.practice.java.blockchain.util;
+package com.challamani.blockchain.util;
 
 public class Constant {
 
