@@ -3,7 +3,7 @@ Idea behind this project is to bring the blockchain technology close to people.
 
 Understanding how crypto currency (Bitcoin) & Blockchain born together.
 
-The initial idea might be creating digital crypto currency but in the process building/protecting/implementing that core idea, he (satoshi nakamoto) has introduced block-chain technology.
+The initial idea might be creating decentralized crypto-currency bank but in the process of building/protecting/implementing that core idea, he (satoshi nakamoto/anonymous) has introduced block-chain technology.
 
 **Blockchain** is a digitally distributed, decentralized and immutable chain. (once you create a block in block-chain you cannot edit/remove it from the blockchain)   
 
@@ -14,7 +14,7 @@ The initial idea might be creating digital crypto currency but in the process bu
 
 List of Blockchain databases - BigChainDB / Cassandra / ChainifyDB / PostChain / ProvenDB - (internally uses MongoDB), 
 
-This simulator not using above of the above database systems - in this project everything is in-memory operation may be in long run - I'll try to achieve multi-node write once Block-chain.  
+This simulator not using above of the above database systems - in this project everything is in-memory operation may be in long run - we will try to achieve multi-node write once read anywhere Block-chain.  
 
 How Blockchain solved below problems
 
@@ -25,5 +25,4 @@ How Blockchain solved below problems
 
 Everything is in-memory operation, you might encounter heap-memory related errors at runtime (when you try with huge number of records)
 
-Planning to integrate with *Camunda BPMN engine* to get in-memory transactions, so you won't encounter any jvm heap errors at runtime.
-
+Planning to integrate with *Camunda BPMN engine* to hold transactions, so that we won't encounter any jvm heap errors at runtime.
