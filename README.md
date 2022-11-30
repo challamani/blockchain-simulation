@@ -1,4 +1,4 @@
-# Blockchain Simulator
+# Blockchain Simulation
 Idea behind this project is to bring the blockchain technology close to people. 
 
 Understanding how crypto currency (Bitcoin) & Blockchain born together.
